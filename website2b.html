@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Website2.css" type="text/css" >
+    <script src="website2.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<body>
+    <!-- Sign up button -->
+    <a href="#" id="signup-btn" onclick="window.location.href='https://www.example.com/signup'">Sign Up</a>
+    <!-- Login button -->
+    <a href="#" id="login-btn" onclick="window.location.href='https://www.example.com/login'">Login</a>
+    <!--Top button script -->
+<!-- Menu button -->
+<span id="menuBtn" onclick="openNav()">☰ Menu</span>
+<!-- Side menu -->
+<div id="mySidenav" class="sidenav">
+ <a href="javascript:void(0)" id="closeBtn" onclick="openNav()">&times;</a>
+ <a href="#">Home</a>
+ <a href="#about-us">About Us</a>
+ <a href="#services">Our Services</a>
+ <a href="#contact-us">Contact Us</a>
+ <a href="#form-container">Survey</a>
+ <a href="#products">Our Products</a>
+</div>
+<!-- Main content area -->
+<div id="main">
+ <div style="text-decoration: underline;">
+ <h1 style="text-align:center">Welcome to Matrix Business</h1>
+</div>
+ <p style="font-size: 30px;">At Matrix Business, we offer a wide range of products and services to help your business succeed. 
+     <br>Our team of experts are dedicated to providing you with the best solutions for your specific needs.</p>
+     <div style="background-color: gray;">
+     <div id="about-us">
+         <h3>About Us</h3>
+         <p style="font-size: 25px;">Matrix Business is a company that specializes in providing high-quality products and services to businesses of all sizes. We have been in business for over 20 years and have a team of experts who are dedicated to helping our customers succeed.</p>
+     </div>
+     </div>
+     <div style="background-color: gray;">
+         <div id="services">
+         <h3>Services</h3>
+         <ul style="font-size: 25px;">
+             <li>Product development</li>
+             <li>Marketing and advertising</li>
+             <li>Consulting services</li>
+             <li>Data analysis and reporting</li>
+         </ul>
+     </div>
+     </div>
+     <div style="background-color:gray">
+     <div id="contact-us">
+         <h3>Contact Us</h3>
+         <p style="font-size: 25px;">If you have any questions or need more information about our products and services, 
+             please feel free to contact us. We are happy to help.<br><br>
+         <span style="text-decoration: underline; font-weight: bold;">Phone Number: 555-555-555</span></p>
+     </div>
+     </div>
+     <div style="height: 15px; background-color: #ffcf80;"></div>
+ <!-- Form and Table Wrapper-->
+ <div style="background-color: gray;">
+ <!-- Form -->
+ <div id="form-container">
+     <form>
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" placeholder="Your name..">
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" placeholder="Your email address..">
+       <label for="dropdown">Select an option:</label><br>
+       <select id="dropdown" name="dropdown">
+         <option value="" selected></option>
+         <option value="option1">1-Really Bad</option>
+         <option value="option2">2-Bad</option>
+         <option value="option3">3-Decent</option>
+         <option value="option3">4-Good</option>
+         <option value="option3">5-Awesome</option>
+       </select><br>
+       <label for="message">Message:</label>
+       <textarea id="message" name="message" placeholder="Type your message here.."></textarea>
+       <input type="submit" value="Submit">
+     </form>
+ </div>
+ <div style="height: 35px; background-color: #ffcf80;"></div>
+ <!-- table -->
+ <table style="margin:20px auto; width:70%; text-align:center; border: 2px solid black; font-size: 20px;" id="products">
+     <tr>
+       <th style="border: 2px solid black; padding: 10px;">Product</th>
+       <th style="border: 2px solid black; padding: 10px;">Price</th>
+     </tr>
+     <tr>
+       <td style="border: 2px solid black; padding: 10px;">Product 1</td>
+       <td style="border: 2px solid black; padding: 10px;">$100</td>
+     </tr>
+     <tr>
+       <td style="border: 2px solid black; padding: 10px;">Product 2</td>
+       <td style="border: 2px solid black; padding: 10px;">$200</td>
+     </tr>
+     <tr>
+       <td style="border: 2px solid black; padding: 10px;">Product 3</td>
+       <td style="border: 2px solid black; padding: 10px;">$300</td>
+     </tr>
+     <tr>
+         <td style="border: 2px solid black; padding: 10px;">Product 4</td>
+         <td style="border: 2px solid black; padding: 10px;">$400</td>
+       </tr>
+ </table>
+ <table></table>
+ </div><br><br><br>
+</div>
+<!--Social media-->
+<div id="follow-us">
+    <h3>Follow Us</h3>
+    <div id="social-icons">
+        <a href="https://www.instagram.com/" onclick="window.location.href = this.href; return false;">Instagram</a><br>
+        <a href="https://twitter.com/" onclick="window.location.href = this.href; return false;">Twitter</a>
+        
+    </div>
+</div>
+<!--Footer-->
+<div style="position:relative">
+ <footer>
+     <div style="word-spacing: 95px; padding-top: 40px ;">&nbsp;<a style="color: darkslategrey ;" href="#">Copyright</a><span>  |</span>
+     <a style="color: darkslategray;" href="#" id="" onclick="window.location.href='https://www.example.com/ReportBugs'">Report_a_bug</a><span>  |</span>
+     <a style="color: darkslategray;" href="#" id="" onclick="window.location.href='https://www.example.com/ContactSupport'">Contact_Support</a><span>  |</span>
+     <a style="color: darkslategrey ;" href="#form-container">Feedback</a><br><br></div>
+
+     
+ </footer>
+</div>
+
+<!--Top button-->
+<button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
+</body>
+</html>
