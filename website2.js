@@ -23,3 +23,11 @@ function openNav() {
    menu.style.width = "250px";
  }
 }
+
+
+//random number
+function generateAmount() {
+    const output = document.getElementById("output");
+    const randomAmount = (Math.random() * 100).toFixed(2);
+    output.innerHTML = `$${randomAmount}`;
+  }

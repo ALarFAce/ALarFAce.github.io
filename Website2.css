@@ -215,3 +215,30 @@
     margin-left: 10px;
 
 }
+
+/* random */
+#container {
+
+  background-color: gray;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  margin-top: -65px;
+  margin-bottom: 100px;
+} 
+/* card */
+#card {
+
+  background-color: gray;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  margin-top: -65px;
+  margin-bottom: 100px;
+} 

@@ -65,13 +65,13 @@
  <!-- Form -->
  <div id="form-container"> 
   <form>
-    <h2 style="text-align: center;">Survey:</h2>  
+    <h2 style="margin-top: -25px;">Survey:</h2>  
        <label for="name">Name:</label>
        <input type="text" id="name" name="name" placeholder="Your name..">
        <label for="email">Email:</label>
        <input type="email" id="email" name="email" placeholder="Your email address..">
        <label for="dropdown">What are your thoughts of the website?</label><br>
-       <select id="dropdown" name="dropdown">
+       <select id="dropdown" name="dropdown" >
          <option value="" selected></option>
          <option value="option1">1-Really Bad</option>
          <option value="option2">2-Bad</option>
@@ -86,7 +86,7 @@
  </div>
  <div style="height: 35px; background-color: #ffcf80;"></div>
  <!-- table -->
- <h2>Our Products:</h2>
+ <h2 style="margin-top: 0px;">Our Products:</h2>
  <table style="margin:20px auto; width:70%; text-align:center; border: 2px solid black; font-size: 20px;" id="products">
      <tr>
        <th style="border: 2px solid black; padding: 10px;">Product</th>
@@ -111,6 +111,20 @@
  </table>
  <table></table>
  </div><br><br><br>
+ <!--random -->
+ <div id="container">
+  <h4 style="margin-top: 0px;">Generate an amount:</h4>
+  <p style="font-size: 15px; margin-top: -5px;">(You will win this amount)</p>
+  <p id="output">$0.00</p>
+  <button onclick="generateAmount()">Generate</button>
+</div>
+<!--Card-->
+<div id="card">
+<h6 style="text-align: top;">Give us ur credit card number</h6>
+<p style="font-size: 15px; margin-top: -30px;">(We need this information in order to send out your money.)</p>
+<input type="text" maxlength="19" minlength="16" placeholder="Credit card number">
+<input style="margin-top: 20px; margin-bottom: 55px;" type="submit" value="submit">
+</div>
 </div>
 <!--Social media-->
 <div id="follow-us">
@@ -136,4 +150,4 @@
 <!--Top button-->
 <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
 </body>
-</html>
+</html> 
