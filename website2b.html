@@ -63,13 +63,14 @@
  <!-- Form and Table Wrapper-->
  <div style="background-color: gray;">
  <!-- Form -->
- <div id="form-container">
-     <form>
+ <div id="form-container"> 
+  <form>
+    <h2 style="text-align: center;">Survey:</h2>  
        <label for="name">Name:</label>
        <input type="text" id="name" name="name" placeholder="Your name..">
        <label for="email">Email:</label>
        <input type="email" id="email" name="email" placeholder="Your email address..">
-       <label for="dropdown">Select an option:</label><br>
+       <label for="dropdown">What are your thoughts of the website?</label><br>
        <select id="dropdown" name="dropdown">
          <option value="" selected></option>
          <option value="option1">1-Really Bad</option>
@@ -80,30 +81,31 @@
        </select><br>
        <label for="message">Message:</label>
        <textarea id="message" name="message" placeholder="Type your message here.."></textarea>
-       <input type="submit" value="Submit">
+       <input type="submit" value="Submit"><br>
      </form>
  </div>
  <div style="height: 35px; background-color: #ffcf80;"></div>
  <!-- table -->
+ <h2>Our Products:</h2>
  <table style="margin:20px auto; width:70%; text-align:center; border: 2px solid black; font-size: 20px;" id="products">
      <tr>
        <th style="border: 2px solid black; padding: 10px;">Product</th>
        <th style="border: 2px solid black; padding: 10px;">Price</th>
      </tr>
      <tr>
-       <td style="border: 2px solid black; padding: 10px;">Product 1</td>
+       <td style="border: 2px solid black; padding: 10px;">Small Pack</td>
        <td style="border: 2px solid black; padding: 10px;">$100</td>
      </tr>
      <tr>
-       <td style="border: 2px solid black; padding: 10px;">Product 2</td>
+       <td style="border: 2px solid black; padding: 10px;">Medium Pack</td>
        <td style="border: 2px solid black; padding: 10px;">$200</td>
      </tr>
      <tr>
-       <td style="border: 2px solid black; padding: 10px;">Product 3</td>
+       <td style="border: 2px solid black; padding: 10px;">Large Pack</td>
        <td style="border: 2px solid black; padding: 10px;">$300</td>
      </tr>
      <tr>
-         <td style="border: 2px solid black; padding: 10px;">Product 4</td>
+         <td style="border: 2px solid black; padding: 10px;">Mega Pack</td>
          <td style="border: 2px solid black; padding: 10px;">$400</td>
        </tr>
  </table>
