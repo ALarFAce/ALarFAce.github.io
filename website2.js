@@ -1,4 +1,16 @@
 
+ //scroll to bottom button//
+ function scrollToBottom() {
+    var c = document.documentElement.scrollTop || document.body.scrollTop;
+    var end = document.body.scrollHeight - window.innerHeight;
+    if (c < end) {
+        window.scrollTo(0, c + (end - c) / 8);
+        window.requestAnimationFrame(scrollToBottom);
+    } else {
+        window.scrollTo(0, end);
+    }
+}
+ //scroll to top button//
  window.onscroll = function() {
      if (window.pageYOffset + window.innerHeight >= document.body.scrollHeight) {
          document.getElementById("scrollToTopBtn").style.display = "block";
@@ -13,7 +25,18 @@
          window.scrollTo(0, c - c / 8);
      }
  }
-
+ window.onscroll = function() {
+    if (window.pageYOffset === 0) {
+      document.getElementById("scrollToBottomBtn").style.display = "block";
+    } else {
+      document.getElementById("scrollToBottomBtn").style.display = "none";
+    }
+    if (window.pageYOffset + window.innerHeight >= document.body.scrollHeight) {
+      document.getElementById("scrollToTopBtn").style.display = "block";
+    } else {
+      document.getElementById("scrollToTopBtn").style.display = "none";
+    }
+  };
 // JavaScript function to open and close the side menu
 function openNav() {
  var menu = document.getElementById("mySidenav");

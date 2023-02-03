@@ -14,7 +14,6 @@
     <a href="#" id="signup-btn" onclick="window.location.href='https://www.example.com/signup'">Sign Up</a>
     <!-- Login button -->
     <a href="#" id="login-btn" onclick="window.location.href='https://www.example.com/login'">Login</a>
-    <!--Top button script -->
 <!-- Menu button -->
 <span id="menuBtn" onclick="openNav()">☰ Menu</span>
 <!-- Side menu -->
@@ -27,6 +26,9 @@
  <a href="#form-container">Survey</a>
  <a href="#products">Our Products</a>
 </div>
+<!--bottom button-->
+<button id="scrollToBottomBtn" onclick="scrollToBottom()"><p id="down">Down<p></button>
+
 <!-- Main content area -->
 <div id="main">
  <div style="text-decoration: underline;">
@@ -110,20 +112,25 @@
        </tr>
  </table>
  <table></table>
- </div><br><br><br>
- <!--random -->
+ </div><br>
+ <!--Random-->
  <div id="container">
-  <h4 style="margin-top: 0px;">Generate an amount:</h4>
-  <p style="font-size: 15px; margin-top: -5px;">(You will win this amount)</p>
-  <p id="output">$0.00</p>
-  <button onclick="generateAmount()">Generate</button>
-</div>
-<!--Card-->
-<div id="card">
-<h6 style="text-align: top;">Give us ur credit card number</h6>
-<p style="font-size: 15px; margin-top: -30px;">(We need this information in order to send out your money.)</p>
-<input type="text" maxlength="19" minlength="16" placeholder="Credit card number">
-<input style="margin-top: 20px; margin-bottom: 55px;" type="submit" value="submit">
+  <div id="random">
+    <h4 style="margin-top: 0px;">Generate an amount:</h4>
+    <p style="font-size: 15px; margin-top: -25px;">(You will win this amount)</p>
+    <p style="margin-top: 42px;" id="output">$0.00</p>
+    <button style="background-color:#45a049; color: white; height: 40px; width: 75px; border: none; outline: none; margin-top:15px ;" onclick="generateAmount()">Generate</button>
+  </div>
+  <!--card-->
+  <form action=""></form>
+  <div id="card">
+    <h6 style="margin-top: -30px; font-size: 22px;">Give us ur credit card number</h6>
+    <p style="font-size: 15px; margin-top: -30px; margin-bottom: 30px;">(We need this information in order to send out your money.)</p>
+    <input type="text" maxlength="19" minlength="16" placeholder="Credit card number">
+    <input style="margin-top: 13px;" type="submit" value="submit">
+  </div>
+</form>
+  <div style="clear:both"></div>
 </div>
 </div>
 <!--Social media-->
@@ -142,12 +149,17 @@
      <a style="color: darkslategray;" href="#" id="" onclick="window.location.href='https://www.example.com/ReportBugs'">Report_a_bug</a><span>  |</span>
      <a style="color: darkslategray;" href="#" id="" onclick="window.location.href='https://www.example.com/ContactSupport'">Contact_Support</a><span>  |</span>
      <a style="color: darkslategrey ;" href="#form-container">Feedback</a><br><br></div>
-
+    
+     <div style="padding-left: 80px;"><a style="color: darkslategrey ;" href="#">Privacy_Policy</a><span style="padding-left: 69px;">|</span></div>
+     <div style="padding-left: 460px; margin-top: -30px;"><a style="color: darkslategray;" href="#" id="" onclick="window.location.href='https://www.example.com/ReportBugs'">FAQ</a><span style="padding-left: 160px;" >|</span></div>
+    <div style="padding-left:  810px; margin-top: -30px;"><a style="color: darkslategray;" href="#" id="" onclick="window.location.href='https://www.example.com/ContactSupport'">Our_Blog</a><span style="padding-left: 145px;">|</span></div>
+    <div style="padding-left: 1130px; margin-top: -30px;" ><a style="color: darkslategrey ;" href="#form-container">Forgot_Password</a></div> 
+  
      
  </footer>
 </div>
 
 <!--Top button-->
-<button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
+<button id="scrollToTopBtn" onclick="scrollToTop()">Up</button>
 </body>
 </html> 
